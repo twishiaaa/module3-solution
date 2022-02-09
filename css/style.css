@@ -106,7 +106,7 @@ p {
 	}
 
 	.col-lg-4 {
-    width: 31.333333%;
+    width: 31.333333%!important;
 	}
 
 	.row { 
@@ -139,7 +139,7 @@ p {
 
 @media (min-width: 992px){ 
 	.col-md-4 {
-	    width: 30.333333%;
+	    width: 30.333333%!important;
 	}
 
 	.row { 
