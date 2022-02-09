@@ -1,1 +1,132 @@
 
+h1 { 
+	text-align: center; 
+	font-family:  'Comic San MS';
+	font-weight: 700;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	color: #020000;
+}
+
+h3 { 
+	text-align: center; 
+	font-family:  'Comic San MS';
+	font-weight: 700;
+	color: #020000;
+	margin-top: 5px;
+}
+
+p {
+	font-family:  'Comic San MS';
+	font-weight: 500;
+	font-size: 18px;
+	color: #020000;
+}
+
+.chicken { 
+	background-color: #999999;
+	padding: 5px 15px;
+	margin: 20px;
+}
+
+
+/*Header css*/
+
+.navbar-brand1 { 
+	font-family: 'Comic San MS';
+    font-weight: 700;
+    color: #020000;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 0px!important;
+}
+
+#header-nav {
+	background-color: #999999;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 2px solid black;
+}
+
+/*Navbar toggle css*/
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid black!important;
+    background: white;
+}
+
+.navbar-nav>li:nth-child(3)>a {
+	border: none!important;
+	padding-bottom: 5px;
+}
+
+.navbar-nav>li:nth-child(1)>a {
+	padding-top: 5px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: -70px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: black!important;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: gray;
+    background-color: TRANSPARENT;
+}
+
+@media (min-width: 1200px)  {
+	.container {
+    	width: 100%;
+	}
+}
+
+@media (min-width: 768px){
+	.container {
+    	width: 100%;
+    }
+
+    .container-fluid.chicken {
+	    margin-left: 10%!important;
+	    margin-right: 10%!important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+	    padding-right: 0!important;
+	    padding-left: 0!important;
+	    margin-right: auto;
+	    margin-left: auto;
+  }
+
+	.container-fluid.chicken {
+	    margin-left: 10%!important;
+	    margin-right: 10%!important;
+	}
+
+	
+	.navbar-brand1 { 
+	    padding: 30px;
+	}
+
+}
