@@ -1,171 +1,110 @@
+/********** Base styles **********/
 
-h1 { 
-	text-align: center; 
-	font-family:  'Comic San MS';
-	font-weight: 700;
-	margin-bottom: 50px;
-	margin-top: 30px;
-	color: #020000;
-}
-
-h3 { 
-	text-align: center; 
-	font-family:  'Comic San MS';
-	font-weight: 700;
-	color: #020000;
-	margin-top: 5px;
+h1 {
+  font-family: 'Comic Sans MS';
+	text-align: center;
+ 	margin: 50px;
 }
 
 p {
-	font-family:  'Comic San MS';
-	font-weight: 500;
-	font-size: 18px;
-	color: #020000;
+  font-family: 'Comic Sans MS';
+  font-weight: 500;
+  color: black;
+  padding: 20px;
+  margin: auto;
 }
 
-.chicken { 
-	background-color: #999999;
-	padding: 5px 15px;
-	margin: 10px;
+*{
+  box-sizing: border-box;
 }
 
-.row { 
+.title {
+  position: relative;
+  float: right;
+  padding: 5px 30px;
+  margin: -1px;
+  border: 1px solid black;
+  font-family: 'Comic Sans MS';
+  font-weight: 600;
+}
+
+/* Chicken section */
+.chicken {
+  background-color: #D59898;
+}
+
+/* Beef section*/
+.beef {
+  background-color: #C14543;
+  color: white;
+}
+
+/* Sushi section */
+.sushi {
+  background-color: #E5D198;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.container{
+  margin: 0 20px 0 20px;
+} 
+
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+   .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+  }
+
+  .col-lg-4 {
+    width: 30.33%;
+  }
+  
+  .col {
+  margin: 10px;
+  background-color: #999999;
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-6, .col-md-12 {
+    border: 1px solid black;
+  }
+
+  .col-md-6 {
+    width: 48%;
+  }
+
+  .col-md-12 {
+    width: 98%;
+    margin-top: 20px!important;
+  }
+
+  .row { 
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 0px !important;
+    flex-wrap: wrap; 
   }
 
-/*Header css*/
-
-.navbar-brand1 { 
-	font-family: 'Comic San MS';
-    font-weight: 700;
-    color: #020000;
-    font-size: 30px;
-    padding: 20px;
-    margin-bottom: 0px!important;
-}
-
-#header-nav {
-	background-color: #999999;
-	border-radius: 0;
-	border: 0;
-	border-bottom: 2px solid black;
-}
-
-/*Navbar toggle css*/
-.navbar-default .navbar-nav>li>a {
-    color: black;
-    text-align: center;
-    border-bottom: 2px solid black!important;
-    background: white;
-}
-
-.navbar-nav>li:nth-child(3)>a {
-	border: none!important;
-	padding-bottom: 5px;
-}
-
-.navbar-nav>li:nth-child(1)>a {
-	padding-top: 5px;
-}
-
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: -70px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    border-radius: 4px;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: black;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: black!important;
-    background-color: white;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-	color: gray;
-    background-color: TRANSPARENT;
-}
-
-@media (min-width: 1200px)  {
-	.container {
-    	width: 100%;
-	}
-
-	.col-lg-4 {
-    width: 31.333333%;
-	}
-
-	.row { 
-    margin-left: 25px !important; 
-  }
-}
-
-@media (min-width: 768px){
-	.container {
-    	width: 100%;
-    }
-
-    .container-fluid.chicken {
-	    margin-left: 10%!important;
-	    margin-right: 10%!important;
-	}
-
-	.col-sm-6 {
-    width: 47.1%;
-	}
-
-	.col-sm-12 {
-    width: 96.5%;
-	}
-
-	.row { 
-    margin-left: 0px !important; 
-  }
-}
-
-@media (min-width: 992px){ 
-	.col-md-4 {
-	    width: 30.333333%;
-	}
-
-	.row { 
-    margin-left: 15px !important; 
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-	    padding-right: 0!important;
-	    padding-left: 0!important;
-	    margin-right: auto;
-	    margin-left: auto;
+  .col {
+    margin: auto;
+    background-color: #999999;
   }
 
-	.container-fluid.chicken {
-	    margin-left: 10%!important;
-	    margin-right: 10%!important;
-	}
 
-	
-	.navbar-brand1 { 
-	    padding: 30px;
-	}
+}
 
-	.row { 
-    margin-left: 0px !important; 
+/********** Mobile View **********/
+@media (max-width:767px) {
+  .col {
+    border: 1px solid black;
+    margin: 20px;
+    background-color: #999999;
   }
 }
